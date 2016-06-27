@@ -11,11 +11,11 @@ It is a simple Spring MVC application that uses the following technologies:<br/>
 <li>Bootstrap CSS</li>
 </ul>
 <br/>
-To install this from a console to the directory DIR type:<br/>
-git clone https://github.com/novarse/nltt.git DIR<br/>
+To install this to a specific directory (e.g. ~/temp/nltt), in a console type:<br/>
+git clone https://github.com/novarse/nltt.git ~/temp/nltt<br/>
 <br/>
 To see this running in a web browser do the following:<br/>
-Run the Maven Jetty plugin by typing in a console:<br/>
+In a console, go to the directory the app was installed in. Run the Maven Jetty plugin by typing:<br/>
 mvn jetty:run<br/>
 <br/>
 In a web browser's URL bar type:<br/>
