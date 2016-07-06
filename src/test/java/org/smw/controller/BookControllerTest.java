@@ -77,7 +77,10 @@ public class BookControllerTest {
 
 		int bookId = 300;
 
-		BookDetail bookDetail = new BookDetail(1, 1, "detail");
+		Book book = new Book(bookId, "book", "author", "1234", 1, "borrower");
+		BookDetail bookDetail = new BookDetail(1, bookId, "detail");
+
+		Mockito.when(bookDao.getBook(bookId)).thenReturn(book);
 		Mockito.when(bookDao.getBookDetail(bookId)).thenReturn(bookDetail);
 		assertEquals(View.BOOK, c.book(bookId, modelMap));
 		assertEquals(2, modelMap.size());
